@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+html {
+    font-family: "Karla", sans-serif;
+    padding-left: 400px;
+    margin: 250px;
+}
+
+.container {
+    width: 40em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.8fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "head head head head"
+        "left-content left-content right-content right-content";
+}
+
+.head {
+    background: #ffffff;
+    padding: 10px 40px;
+    grid-area: head;
+}
+.head h1 {
+    color: #2ab2af;
+    font-size: 25px;
+}
+.head h3 {
+    color: #c0df34;
+    font-size: 20px;
+}
+
+.left-content {
+    background: #00b9b2;
+    padding: 10px 40px;
+    grid-area: left-content;
+}
+.left-content p {
+    color: #ffffff;
+}
+.left-content span:nth-child(2) {
+    font-size: 30px;
+}
+.left-content span:nth-child(3) {
+    font-size: 15px;
+    font-weight: 200;
+    color: #88ded8;
+}
+.left-content span:nth-child(4) {
+    font-size: 15px;
+}
+.left-content button {
+    background-color: #aef101;
+    border-radius: 10px;
+    border-style: none;
+    height: 40px;
+    width: 100%;
+}
+.right-content {
+    background: #13c4be;
+    padding: 10px 40px;
+    grid-area: right-content;
+    color: #ffffff;
+}
